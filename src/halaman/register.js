@@ -22,7 +22,7 @@ function SignIn() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         axios.post('http://localhost:5000/users/', {
-            full_name: full_name,
+            name: full_name,
             phone: phone,
             email: email,
             password: password,
